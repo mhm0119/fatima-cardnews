@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
-<title>파티마뉴스</title>
+<title>임직원 카드뉴스</title>
 <style>
 :root{--bg:#eef2f6;--ink:#172033;--accent:#155dcc}
 *{box-sizing:border-box} body{margin:0;background:var(--bg);font-family:'Malgun Gothic',Arial,sans-serif;color:var(--ink)}
@@ -13,7 +13,7 @@ figcaption{font-size:13px;color:#667085;padding:10px 4px 18px}
 button{border:0;border-radius:999px;width:44px;height:44px;font-size:22px;background:#edf3ff;color:var(--accent);cursor:pointer} .counter{min-width:62px;text-align:center;font-weight:700}
 .empty{background:white;border-radius:18px;padding:60px 20px;text-align:center;color:#667085}
 </style></head><body>
-<header><h1>파티마뉴스</h1><small>2026-07-14 17:33:07</small></header>
+<header><h1>임직원 카드뉴스</h1><small>2026-07-14 17:46:26</small></header>
 <main class="viewer"><div class="stage"><figure class="slide active" data-index="0"><img src="01_01_%EC%B9%AD%EC%B0%AC%EB%A6%B4%EB%A0%88%EC%9D%B4_groupware_%EC%B9%AD%EC%B0%AC%EB%A6%B4%EB%A0%88%EC%9D%B4_24523.png" alt="칭찬릴레이 80호 - 영상의학과 김태우 매니저"><figcaption><b>칭찬릴레이</b> 칭찬릴레이 80호 - 영상의학과 김태우 매니저</figcaption></figure>
 <figure class="slide" data-index="1"><img src="02_03_%EC%B9%AD%EC%B0%AC%ED%95%A9%EB%8B%88%EB%8B%A4_homepage_%EC%B9%AD%EC%B0%AC%ED%95%A9%EB%8B%88%EB%8B%A4_18330.png" alt="전도환과장님 감사합니다."><figcaption><b>칭찬합니다</b> 전도환과장님 감사합니다.</figcaption></figure>
 <figure class="slide" data-index="2"><img src="03_20260714_173159_%EA%B7%B8%EB%A3%B9%EC%9B%A8%EC%96%B4_%EA%B3%B5%EC%A7%80%EC%82%AC%ED%95%AD.png" alt="그룹웨어 공지사항.png"><figcaption><b>수동등록</b> 그룹웨어 공지사항.png</figcaption></figure>
@@ -25,5 +25,4 @@ const slides=[...document.querySelectorAll('.slide')]; let i=0;
 function show(n){if(!slides.length)return;i=(n+slides.length)%slides.length;slides.forEach((s,j)=>s.classList.toggle('active',j===i));document.getElementById('cur').textContent=i+1}
 function move(d){show(i+d)}
 let sx=0;document.addEventListener('touchstart',e=>sx=e.touches[0].clientX,{passive:true});document.addEventListener('touchend',e=>{let dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>50)move(dx<0?1:-1)},{passive:true});
-setInterval(()=>{if(slides.length>1)move(1)},8000);
 </script></body></html>
