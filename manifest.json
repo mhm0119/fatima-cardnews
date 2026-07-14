@@ -1,7 +1,7 @@
 {
-  "published_at": "2026-07-14 14:04:36",
+  "published_at": "2026-07-14 14:25:24",
   "source_manifest": "C:\\python\\fatima_cardnews\\output\\cards_v12\\2026-07-14\\cards_manifest.json",
-  "count": 1,
+  "count": 2,
   "cards": [
     {
       "order": 1,
@@ -13,6 +13,17 @@
       "author": "박가애 선임매니저",
       "page": 1,
       "original_url": "https://gw.fatimahosp.co.kr/app/board/390/post/24523/?"
+    },
+    {
+      "order": 2,
+      "filename": "02_03_칭찬합니다_homepage_칭찬합니다_18330.png",
+      "article_id": "homepage_칭찬합니다_18330",
+      "board_name": "칭찬합니다",
+      "title": "전도환과장님 감사합니다.",
+      "published_at": "2026-07-14",
+      "author": "",
+      "page": 1,
+      "original_url": "https://www.fatimahosp.co.kr/praise/view.do?boardNo=5&articleNo=18330"
     }
   ]
 }
