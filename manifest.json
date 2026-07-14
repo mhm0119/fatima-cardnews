@@ -1,7 +1,7 @@
 {
-  "published_at": "2026-07-14 14:25:24",
-  "source_manifest": "C:\\python\\fatima_cardnews\\output\\cards_v12\\2026-07-14\\cards_manifest.json",
-  "count": 2,
+  "published_at": "2026-07-14 17:33:07",
+  "source_manifest": "C:\\python\\fatima_cardnews\\output\\cards_v12_1\\2026-07-14\\cards_manifest.json",
+  "count": 5,
   "cards": [
     {
       "order": 1,
@@ -24,6 +24,39 @@
       "author": "",
       "page": 1,
       "original_url": "https://www.fatimahosp.co.kr/praise/view.do?boardNo=5&articleNo=18330"
+    },
+    {
+      "order": 3,
+      "filename": "03_20260714_173159_그룹웨어_공지사항.png",
+      "article_id": "manual_20260714_173159_276db00d",
+      "board_name": "수동등록",
+      "title": "그룹웨어 공지사항.png",
+      "published_at": "2026-07-14",
+      "author": "",
+      "page": 1,
+      "original_url": ""
+    },
+    {
+      "order": 4,
+      "filename": "04_20260714_173233_홈페이지_언론보도.png",
+      "article_id": "manual_20260714_173233_66122fd3",
+      "board_name": "수동등록",
+      "title": "홈페이지 언론보도.png",
+      "published_at": "2026-07-14",
+      "author": "",
+      "page": 1,
+      "original_url": ""
+    },
+    {
+      "order": 5,
+      "filename": "05_20260714_173242_그룹웨어_상호존중.png",
+      "article_id": "manual_20260714_173242_bb560d8e",
+      "board_name": "수동등록",
+      "title": "그룹웨어 상호존중.png",
+      "published_at": "2026-07-14",
+      "author": "",
+      "page": 1,
+      "original_url": ""
     }
   ]
 }
