@@ -1,29 +1,25 @@
 <!doctype html>
-<html lang="ko">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="robots" content="noindex, nofollow, noarchive">
-  <meta name="theme-color" content="#0f4c81">
-  <title>창원파티마병원 임직원 카드뉴스</title>
-  <style>
-    :root{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Malgun Gothic",sans-serif;color:#132238;background:#eef3f8}
-    *{box-sizing:border-box}
-    body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}
-    .panel{width:min(760px,100%);background:#fff;border-radius:24px;padding:40px 28px;text-align:center;box-shadow:0 18px 50px rgba(28,55,90,.12)}
-    h1{margin:0 0 14px;font-size:clamp(26px,5vw,40px);color:#0f4c81}
-    p{margin:8px 0;color:#5c6b7a;line-height:1.65}
-    .status{margin:26px auto 0;padding:16px 18px;border-radius:14px;background:#eef6ff;color:#174f7a;font-weight:700}
-    .note{margin-top:22px;font-size:14px;color:#7a8794}
-  </style>
-</head>
-<body>
-  <main class="panel">
-    <h1>임직원 카드뉴스</h1>
-    <p>게시 준비가 완료되었습니다.</p>
-    <p>승인된 카드뉴스가 등록되면 이 화면에서 바로 확인할 수 있습니다.</p>
-    <div class="status">GitHub Pages 연결 정상</div>
-    <p class="note">외부 공개가 승인된 자료만 게시됩니다.</p>
-  </main>
-</body>
-</html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<title>임직원 카드뉴스</title>
+<style>
+:root{--bg:#eef2f6;--ink:#172033;--accent:#155dcc}
+*{box-sizing:border-box} body{margin:0;background:var(--bg);font-family:'Malgun Gothic',Arial,sans-serif;color:var(--ink)}
+header{position:sticky;top:0;z-index:5;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);padding:12px 16px;box-shadow:0 2px 12px #0001;display:flex;justify-content:space-between;align-items:center}
+header h1{font-size:18px;margin:0} header small{color:#667085}
+.viewer{max-width:760px;margin:0 auto;padding:14px 12px 90px} .stage{position:relative}
+.slide{display:none;margin:0} .slide.active{display:block} .slide img{display:block;width:100%;height:auto;border-radius:18px;box-shadow:0 8px 28px #14233b22;background:white}
+figcaption{font-size:13px;color:#667085;padding:10px 4px 18px}
+.controls{position:fixed;left:50%;bottom:18px;transform:translateX(-50%);display:flex;gap:10px;align-items:center;background:#fff;padding:9px 12px;border-radius:999px;box-shadow:0 8px 30px #0003;z-index:9}
+button{border:0;border-radius:999px;width:44px;height:44px;font-size:22px;background:#edf3ff;color:var(--accent);cursor:pointer} .counter{min-width:62px;text-align:center;font-weight:700}
+.empty{background:white;border-radius:18px;padding:60px 20px;text-align:center;color:#667085}
+</style></head><body>
+<header><h1>임직원 카드뉴스</h1><small>2026-07-14 14:04:36</small></header>
+<main class="viewer"><div class="stage"><figure class="slide active" data-index="0"><img src="01_01_%EC%B9%AD%EC%B0%AC%EB%A6%B4%EB%A0%88%EC%9D%B4_groupware_%EC%B9%AD%EC%B0%AC%EB%A6%B4%EB%A0%88%EC%9D%B4_24523.png" alt="칭찬릴레이 80호 - 영상의학과 김태우 매니저"><figcaption><b>칭찬릴레이</b> 칭찬릴레이 80호 - 영상의학과 김태우 매니저</figcaption></figure></div></main>
+<div class="controls"><button onclick="move(-1)" aria-label="이전">‹</button><span class="counter"><span id="cur">1</span> / 1</span><button onclick="move(1)" aria-label="다음">›</button></div>
+<script>
+const slides=[...document.querySelectorAll('.slide')]; let i=0;
+function show(n){if(!slides.length)return;i=(n+slides.length)%slides.length;slides.forEach((s,j)=>s.classList.toggle('active',j===i));document.getElementById('cur').textContent=i+1}
+function move(d){show(i+d)}
+let sx=0;document.addEventListener('touchstart',e=>sx=e.touches[0].clientX,{passive:true});document.addEventListener('touchend',e=>{let dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>50)move(dx<0?1:-1)},{passive:true});
+setInterval(()=>{if(slides.length>1)move(1)},8000);
+</script></body></html>
